@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Surprise pour Maria</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .typewriter-text {
+      font-size: 1.3em;
+      font-weight: bold;
+      white-space: nowrap;
+      overflow: hidden;
+      border-right: 2px solid #ff69b4;
+      animation: typing 5s steps(40, end), blink .75s step-end infinite;
+      width: 100%;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+    @keyframes typing {
+      from { width: 0 }
+      to { width: 100% }
+    }
+    @keyframes blink {
+      from, to { border-color: transparent }
+      50% { border-color: #ff69b4 }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>🎁 Une Surprise pour Maria</h1>
+    <div class="love-message">
+      <p class="typewriter-text">"Maria, tu es mon monde, mon avenir, mon éternité..."</p>
+    </div>
+    <div class="love-message">
+      <p>Clique ici pour découvrir un cadeau du futur :</p>
+      <button class="btn" onclick="revealSurprise()">🎀 Voir le cadeau magique</button>
+      <p id="surprise-text" style="display:none; margin-top:15px;">Un voyage à Paris, main dans la main, pour voir la Tour Eiffel briller comme ton regard ✨</p>
+    </div>
+    <a href="index.html" class="btn">⬅ Retour</a>
+  </div>
+  <script>
+    function revealSurprise() {
+      document.getElementById("surprise-text").style.display = "block";
+    }
+  </script>
+</body>
+</html>
